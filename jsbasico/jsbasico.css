@@ -1,0 +1,103 @@
+/*CSS reset settings here*/
+
+
+/*CSS reset settings here*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#contenedor {
+    width: 950px;
+    background-color: darkblue;
+    margin: 0px auto;
+    padding: 8px;
+}
+
+#arriba {
+    max-height: 40px;
+    background-color: #cf3036;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#izq {
+    min-height: 140px;
+    width: 160px;
+    background-color: #2a7d8c;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 8px;
+    padding: 18px;
+    font-size: smaller;
+}
+
+#centro {
+    min-height: 350px;
+    width: 700px;
+    background-color: #0e1822;
+    display: inline-block;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+#abajo {
+    min-height: 20px;
+    background-color: #5d6673;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#titulo {
+    color: lavender;
+    margin-left: 20px;
+}
+
+.titulo3-centro {
+    color: lavender;
+    margin-top: 5px;
+}
+
+#list-center {
+    color: lavender;
+}
+
+#centro-2 {
+    padding: 12px;
+    color: lavender;
+}
+
+.list-center {
+    color: darkturquoise;
+    font-size: smaller;
+}
+
+.li-izq {
+    margin-left: 20px;
+    color: darkturquoise;
+}
+
+#li-izq2 {
+    color: darkturquoise;
+    margin-left: 10px;
+}
+
+.link {
+    color: darkturquoise;
+}
+
+a {
+    color: darkturquoise;
+}
+
+span {
+    color: blue;
+}
+
+.space {
+    margin-bottom: 10px;
+}

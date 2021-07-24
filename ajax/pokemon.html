@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //mostrar las imagenes en el html
+            for (let i = 1; i <= 898; i++) {
+                $('#container').append('<img id="' + i + '" src="http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + i + '.png">');
+            }
+
+            $('img').click(function() {
+                var id = $(this).attr('id'); //captura el valor del id, de la imagen clickeada
+                //consumo de api
+                $.get("https://pokeapi.co/api/v2/pokemon/" + id + "/", function(respuesta) {
+                    console.dir(respuesta);
+                    console.log(respuesta.types[0].type.name);
+                    //name; sprites.front_default;types[0].type.name;height;weight
+
+                }, "json");
+
+            });
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+</body>
+
+</html>

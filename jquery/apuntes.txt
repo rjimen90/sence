@@ -1,0 +1,30 @@
+$('#id').addClass('text-danger');     agrega una clase ( texto rojo en boostrap)
+$('#id').removeClass('display-4');    elimina una clase
+
+$('#id').append('<h1>texto de prueba</h1>')   agrega texto al final
+$('#id').prepend('<h1>texto de prueba</h1>')   agrega texto al principio
+
+$('#id').css('color','blue');           cambia color a un id especifico
+
+$(#'id').css({color:'blue',background:'yellow',padding:'20px'})   modifica mas de una propiedad
+
+$('#id').remove();   elimina
+$('#id),hide();      oculta no la elimina, equivalente a display-none
+
+$('img').attr('src','url_imagen');    agrega una imagen
+$('img:last').attr('width','50');     cambia el ancho a la ultima imagen
+
+
+$('.class').click(function(){
+código con la acción
+}) 
+
+$( "ul li" ).first().addClass( "highlight" );    toma el primer elemento de una lista
+$('input.enviar4')      selecciona los input con clase enviar4
+
+$('img').click(function(){
+$(this).hide();                       this detecta el elemento clickeado(u otro evento) en este caso una imagen
+});
+
+for (let i=0; i<5; i++){
+$('.container').append('<img src="img/img/ninja' + i +' .png"><br>');   permite que se agreguen imagenes de nombre ninja0.png --- ninja4.png (concatenar)

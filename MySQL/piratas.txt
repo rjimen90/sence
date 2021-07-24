@@ -1,0 +1,24 @@
+piratas
+id (PK) INT AI NN U
+nombre varchar(45) NN
+foto_url varchar(100) 
+cant_cofres INT default 0 NN
+frase varchar(100) NN
+posicion_id (FK) INT NN
+pata_palo bool dafault true NN
+parche_ojo bool dafault true NN
+garfio_mano bool dafault true NN
+
+--
+usuarios
+id (PK) INT U AI NN
+nombre varchar(45) NN
+rut  INT NN
+dv varchar(4) NN
+email varchar(45) NN
+password varchar(45) NN
+
+--
+posiciones
+id (PK) INT AI NN U
+cargo varchar(45) NN

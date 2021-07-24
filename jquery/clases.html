@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <head>
+        <script type="text/javascript">
+           $(document).ready(function() {
+               // tu código jquery aquí
+      $('input.enviar4').click(function(){
+          alert('primer jquery...')
+          
+      })
+      $('#enviar3').click(function(){
+          alert('otro msg...')
+          $('p').text('ahora esta modificado')
+          
+          
+      })
+      $('.enviar4').click(function(){
+          alert('msg desde class...')
+          
+      })
+        })
+        
+        </script>
+        </head>
+        
+
+<body>
+ 
+<input type="button" value="Enviar1">
+<button>Send2</button>
+<input type="button" value="Enviar3" id="enviar3">
+<input type="button" value="Enviar4" class="enviar4">
+<p>Este parrafo se modificara</p>
+       </div>
+     
+     
+
+</body>
+</html>

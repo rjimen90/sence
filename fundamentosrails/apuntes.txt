@@ -1,0 +1,17 @@
+https://zoom.us/j/9480546157
+
+rails new nombre
+rails g model Name + campos
+rails db:migrate
+
+
+bundle add activeadmin
+bundle add devise
+rails generate active_admin:install
+rails db:migrate db:seed
+
+rails g active_admin:resource Libro
+
+rails g active_admin:resource Autor
+
+rails g scaffold Cliente nombre:string

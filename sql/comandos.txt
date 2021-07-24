@@ -1,0 +1,14 @@
+INSERT INTO table_name (column_name1, column_name2) 
+VALUES('column1_value', 'column2_value');
+
+UPDATE table_name SET column_name1 = 'some_value', column_name2='another_value' WHERE condition(s)
+
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM table_name WHERE condition(s)
+
+INSERT INTO table_name (column_list)
+VALUES
+    (value_list_1),
+    (value_list_2),
+    ...
+    (value_list_n);

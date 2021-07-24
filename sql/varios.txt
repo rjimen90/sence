@@ -1,0 +1,49 @@
+mysql -u root <twitter.sql -p    para usar la bd twitter
+mysql -u root -p
+
+
+create database curso63;
+show databases;
+drop database curso63;   borra la base de datos
+use nombre_bd;
+show tables;
+select * from users     selecciona todo de una tabla users
+select columna from users  trae todo los datos de una columna de una tabla users
+select columna1 as columna 2 from users; cambia el nombre de la columna 1
+select us.first_name, us.last_name from users us;   se asigna un alias us a la tabla
+SELECT * FROM users WHERE id=1  selecciona el id=1
+SELECT * FROM users WHERE id=1 or id=2
+ORDER BY columna ASC
+ORDER BY colunmna DESC
+select * from users WHERE first_name LIKE "%e"    todos los que terminan con e
+select columna1, columna2 FROM users;   trae dos columnas de tabla users
+
+PARA COLUMNAS VARCHAR:
+select from users where first_name like "%e";   selecciona los nombres que terminen en e
+select from users where first_name like "k%";    que comienzen con k
+select from users where first_name like "%k%";   todos los que tengan una k no importa donde
+
+INSERT INTO nombre_tabla (columnas1,columna2,...)
+VALUES (val1,val2,...)    se deben eliminar las columnas definidas como auto incrementables
+UPDATE users SET first_name = 'nombre' WHERE id=1     cambia nombre debe existir una cndicion WHERE de lo contrario cambia todo
+DELETE FROM table_name WHERE condition(s)   ejemplo : DELETE FROM personas WHERE nombre = 'LUIS' AND apellido1 = 'LOPEZ' AND apellido2 = 'PEREZ'
+en caso de error ejecutar SET SQL_SAFE_UPDATES = 0;
+SELECT CONCAT( 'Sr' ,' ', first_name,' ', last_name ) AS full_name FROM users    concatena nombre y apellido , agrega sr e introduce espacios, cambia nombre col a full_name
+SELECT CONCAT( first_name,' ', last_name,' ') AS full_name, birthday AS cumple FROM users     birthday AS cumple  muestra columna con el nombre cumple sin concatenar
+SELECT CONCAT_WS(' ',first_name,last_name) FROM users    agrega automaticamente los espacios
+SELECT length(last_name) As largo FROM users   retorna el largo de caracteres de los registros en la columna
+SELECT lower(columna) from users    cambia los registros de la columna a minusculas
+SELECT upper(handle) from users     cambia los registros de la columna a mayusculas
+SELECT hour (columna) from users    trae el valor hora de la columna
+SELECT dayname(created_at) from users   trae el valor del dia de la semana
+SELECT now ()    trae fecha y hora actual
+SELECT date_format(created_at, '%M') from users trae el nombre del mes , revisar w3schools para más parámetros   https://www.w3schools.com/sql/func_mysql_date_format.asp
+
+SELECT * FROM tabla1 INNER JOIN tabla2 ON tabla1.id = tabla2.id  primero va la 1 despues N  o tambien puede ser
+SELECT * FROM tabla1 , tabla2 WHERE tabla1.id = tabla2.id  
+SELECT * FROM tabla1 , tabla2 WHERE tabla1.id = tabla2.id  AND first_name = 'name'
+
+SELECT first_name, last_name , sites.domain_name, billing.amount
+FROM clients
+JOIN sites ON clients.id = sites.clients_id
+JOIN billing ON clients.id = billing.clients_id

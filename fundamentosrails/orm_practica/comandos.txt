@@ -1,0 +1,40 @@
+rails g model Usuario nombre:string apellido:string edad:integer email:string contrasena:string
+rake db:migrate
+usuario1 = Usuario.new  crea el usuario
+agregar datos
+usuario1.nombre = "John"
+usuario1.apellido = "Doe"
+usuario1.contrasena = "secret"
+
+usuario.save   guarda los datos ingresados
+
+Usuario.create(nombre:"Jon", apellido:"Stark", email:"jon@thewall.com", edad:17)
+
+Usuario.all
+Usuario.first
+Usuario.last
+Usuario.find(2)    busca el con id = 2
+Usuaro.find_by(first_name:"Jane")  encuentra al usuario con nombre Jane , devuelve el primero que encuentra
+Usuario.where(first_name:"Jane")  todos los Jane
+Usuario.where(first_name:"Jane").select(:first_name,:last_name,:email)  retorna los Jane solo con los campos , nombre,apellido,mail
+
+user1.first_name = "John"
+user1.last_name = "Doe"
+user1.age = 20
+-------------------------------------------------------------
+Validaciones:
+Para validar la entrada, simplemente agregamos las validaciones que queremos que tenga el modelo. 
+Primero, utilice la palabra clave validates seguida por el nombre del elemento que queremos validar, 
+seguido por los requerimientos que queremos. Agregue lo siguiente al model Usuario.
+
+class Usuario < ApplicationRecord
+  validates :nombre, presence: true
+end
+----------------------------------------------------------------
+validando que los campos nombre y apellido estén presentes y que su longitud esté dentro del rango de 2 a 20.
+Hay mucho tipo de validaciones y diferentes formas de personalizar las que ya existen.
+
+class Usuario < ApplicationRecord
+  validates :nombre, :apellido, presence: true, length: { in: 2..20 }
+end
+

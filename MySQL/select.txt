@@ -1,0 +1,30 @@
+TABLAS
+SELECT * 
+from faves fv, tweets tw, users us
+WHERE fv.user_id = us.id and fv.tweet_id= tw.id
+order by fv.id;
+
+
+use world;
+-- ¿Qué consulta harías para obtener todos los países que hablan esloveno? 
+-- Tu consulta debe devolver el nombre del país, el idioma y el porcentaje de idioma. 
+-- Tu consulta debe organizar el resultado por porcentaje de idioma en orden descendente. (1)
+
+select * from cities;
+select * from countries;
+select * from languages;
+
+select lg.id,lg.language, lg.percentage from languages lg where lg.language like '%loven%';
+
+select cou.name 
+from countries cou 
+where cou.id =16 or  cou.id =96 or cou.id =107 or cou.id =200;
+
+select lg.language,lg.percentage, cou.name 
+from languages lg, countries cou 
+where lg.country_id = cou.id 
+and lg.language = 'Slovene'
+ ;
+
+select countries.name,languages.language from countries,languages
+WHERE countries.id = languages.country_id and languages.language LIKE "%slove%"

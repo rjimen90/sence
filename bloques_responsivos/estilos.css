@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/
+}
+
+.container {
+    width: 740px;
+    height: 400px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.verde {
+    width: 97%;
+    height: 100px;
+    background-color: green;
+}
+
+.azul {
+    width: 25%;
+    height: 200px;
+    background-color: blue;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 12px;
+    margin-top: 10px;
+}
+
+.rojo {
+    background-color: red;
+    width: 70%;
+    height: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.amarillo {
+    background-color: yellow;
+    width: 28%;
+    height: 100px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.lila {
+    background-color: slateblue;
+    width: 94%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+@media screen and (max-width:480px) {
+    .azul {
+        display: none;
+    }
+    .rojo {
+        width: 35%;
+        height: 120%;
+    }
+    .amarillo {
+        width: 80%;
+    }
+    .verde {
+        width: 35%;
+    }
+    .lila {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:1023px) {
+    .azul {
+        display: none;
+    }
+    .rojo {
+        width: 40%;
+        height: 90%;
+    }
+    .amarillo {
+        width: 40%;
+    }
+    .verde {
+        width: 40%;
+    }
+    .lila {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:1024px) {}

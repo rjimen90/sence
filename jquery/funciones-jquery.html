@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+    <head>
+        <script type="text/javascript">
+           $(document).ready(function() {
+               // tu código jquery aquí
+               $('.hide button:first').click(function(){
+                   $('.hide p').hide()
+               })
+
+               $('.hide button:last').click(function(){
+                   $('.hide p').show()
+               })
+            $('.cont1 button').click(function(){
+                $('.cont1 p').css('color','red')
+            })
+             $('.cont2 button').click(function(){
+                 $('.cont2 p').slideToggle('slow')
+             })
+            
+            $('.cont3 button').click(function(){
+                $('.cont3 p').append('<p>parrafo nuevo </p>');
+                                        
+            })
+            $('.cont4 button').click(function(){
+                $('p').toggle();
+                                        
+            })
+            $('.cont5 p').click(function(){
+                $('.cont5 p').html("<font color=red> cambiando el texto </font>")
+                                        
+            })
+            $('.cont6 img').click(function(){
+                $('.cont6 img').attr('width','50px')
+                                        
+            })
+        })
+        
+        </script>
+        </head>
+        
+
+<body>
+   <div class="container">
+    <div class="hide">
+        <h1>Hide y show</h1>
+        <button>hide</button>
+        <button>show</button>
+        <p>dhakshad asldja dsalsjda dñlajd aldsaÑLSDJLA</p>
+    </div>
+    <hr>
+<div class="cont1">
+    <h1>AddClass</h1>
+    <button>AddClass</button>
+    <p>dhakshad asldja dsalsjda dñlajd aldsaÑLSDJLA</p>
+</div>
+<hr>
+<div class="cont2">
+    <h1>SlideToggle</h1>
+    <button>SlideToggle</button>
+        <p>dhakshad asldja dsalsjda dñlajd aldsaÑLSDJLA</p>
+        <img src="leon.jpg" style="width: 100px;">
+</div>
+<hr>
+<div class="cont3">
+    <h1>Append</h1>
+    <button>Append</button>
+    <p>dhakshad asldja dsalsjda dñlajd aldsaÑLSDJLA</p>
+</div>
+<hr>
+<div class="cont4">
+<button>Toogle</button>
+<p>prueba de toggle</p>
+</div>
+<div class="cont5">
+    <h1>HTML</h1>
+    <p>prueba de HTML</p>
+    </div>
+    <div class="cont6">
+        <h1>attr</h1>
+        <img src="leon.jpg">
+   </div>
+     
+     
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+select * from film_actor
+INNER JOIN ACTOR ON actor.actor_id = film_actor.actor_id
+INNER JOIN FILM ON film_actor.film_id = film.film_id
+where actor.actor_id = 5;
+
+
+select * from film_actor
+INNER JOIN FILM ON film.film_id = film_actor.film_id
+INNER JOIN ACTOR ON actor.actor_id = film_actor.actor_id
+INNER JOIN film_category ON film_category.film_id = film.film_id
+INNER JOIN CATEGORY ON category.category_id= film_category.category_id
+where film_actor.actor_id = 23;
+
+select concat(users2.first_name, " ",users2.last_name) as Amigo, concat(users.first_name," ",users.last_name)as Usuarios 
+from users
+inner join friendships on friendships.user_id = users.id
+inner join users as users2 on users2.id = friendships.friend_id
+where users2.id= 4;
+
+
+wparadas b fastcogroup.c

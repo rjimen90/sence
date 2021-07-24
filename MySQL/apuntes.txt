@@ -1,0 +1,21 @@
+El operador Between selecciona valores dentro de un rango. Los valores pueden ser números, texto o fechas.
+SELECT nombre_columna(s)
+FROM tabla
+WHERE columna BETWEEN valor1 AND valor 2;
+
+LIMIT limita el numero de registros que devuelve una consulta
+LIMIT puede recibir 2 parámetros. El primero corresponde al número del primer registro que se devolverá, 
+y el segundo es el número máximo de registros que se devolverán.
+
+Las funciones de agrupación son utilizadas por Sistemas Gestores de Bases de Datos de manera que operen sobre conjuntos de filas para dar un resultado por grupo
+SQL permite agrupar totales mediante la cláusula: GROUP BY.
+
+avg: calcula la media aritmética de un atributo o una expresión numérica.
+min: devuelve el mínimo de un atributo o expresión numérica.
+max: calcula el valor máximo de un atributo o expresión numérica.
+sum: devuelve la suma total de atributos o expresiones numéricas.
+count (*): contador de tuplas.
+count(distinct): es un contador de tuplas parcial, no tiene en cuenta valores nulos ni duplicados.
+select SEXO , count(*) as EMPLEADOS
+    from EMPLEADOS
+group by SEXO

@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    width: 600px;
+}
+
+h1 {
+    background-color: grey;
+    margin-bottom: 3px;
+    border: 1px solid black;
+}
+
+p {
+    background-color: lavender;
+    margin-bottom: 3px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width:480px) {
+    .hm {
+        background-color: yellow;
+        border: 1px solid black;
+        height: 60px;
+    }
+    .ht {
+        display: none;
+    }
+    .hd {
+        display: none;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:1023px) {
+    .hm {
+        display: none;
+    }
+    .ht {
+        background-color: yellow;
+        height: 60px;
+    }
+    .hd {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .hm {
+        display: none;
+    }
+    .ht {
+        display: none;
+    }
+    .hd {
+        background-color: yellow;
+        height: 60px;
+    }
+}

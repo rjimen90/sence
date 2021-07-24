@@ -1,0 +1,10 @@
+1 e
+2v
+3 no es a
+4f
+5a
+6v
+7a
+8b
+9a
+10 no es b , ni c,d

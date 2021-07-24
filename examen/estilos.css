@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    }
+    .container {
+        width: 980px;
+        height: 700px;
+    }
+
+   .pcentralizq {
+       width: 650px;
+       background-color:#ececeb;
+       display: inline-block;
+       vertical-align: top;
+       height: 250px;
+       
+
+   }
+          .der {
+              width: 320px;
+              display: inline-block;
+              background-color: white;
+              
+              
+          }   
+   
+  
+#imagentop {
+    width: 80px;
+    vertical-align: middle;
+}
+.menu2 {
+    text-align: right;
+    margin-right: 20px;
+    
+}
+    .fli {
+        display: inline-block;
+        margin-left: 40px;
+      
+    }
+    .imgt {
+        display: inline-block;
+    }
+    .mtop {
+        display: inline-block;
+    }
+.menu {
+    background-color: black;
+    color: cornsilk;
+}
+
+.p1 {
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    margin-right: 90px;
+    padding: 10px;
+}
+.img2 {
+    display: inline-block;
+    width: 80px;
+    margin-left: 18px;
+}
+.boton1 {
+    background-color: black;
+    color: blanchedalmond;
+    float: right;
+    margin-top: 15px;
+}
+.safe {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.eco {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 20px;
+
+}
+.help {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 20px;
+}
+.welcome {
+    width: 600px;
+}
+
+
+
+.footer {
+    background-color: black;
+    color: cornsilk;
+    width: 980px;
+    height: 150px;
+    padding: 20px;
+}
+.f1 {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 40px;
+}
+.f2 {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 40px;
+    
+}
+.f3 {
+    display: inline-block;
+    vertical-align: top;
+
+}
+.foot1 {
+    list-style: none;
+}
+
+#recy {
+    width: 70px;
+    float: right;
+}
+.t2 {
+    background-color:#ececeb ;
+}
+.boton2 {
+    background-color: black;
+    color: white;
+}

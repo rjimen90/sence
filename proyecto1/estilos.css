@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    
+    }
+body {
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+    color: mintcream;
+}
+.sidebar-container {
+    min-height: 500px;
+    width: 200px;
+    background-color: midnightblue;
+}
+.logo {
+    padding: 3px;
+    color: blanchedalmond;
+}
+
+
